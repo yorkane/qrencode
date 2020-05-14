@@ -7,6 +7,24 @@ qrencode is a wrapper of [libqrencode](http://fukuchi.org/works/qrencode/) with 
 qrencode is dependent on [libqrencode](http://fukuchi.org/works/qrencode/) 
 and [libpng](http://www.libpng.org/pub/png/libpng.html), so make sure these are installed
 before compile it.
+#### Compile and install libqrencode into openresty
+```sh
+curl -Lk https://fukuchi.org/works/qrencode/qrencode-4.0.2.tar.gz | tar xvz
+cd qrencode-4.0.2
+./configure
+make
+mv .libs/libqrencode.so.4.0.2 /usr/local/openresty/site/lualib/libqrencode.so.4
+```
+
+#### Compile and install qrencode into openresty
+
+```sh
+git clone https://github.com/yorkane/qrencode
+cd qrencode
+make
+make install
+
+```
 
 ## Example usage
 
