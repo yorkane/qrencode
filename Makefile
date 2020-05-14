@@ -10,7 +10,7 @@ clean:
 	rm -f $(LIBNAME).so 
 
 install:
-mv -f qrencode.so /opt/data/openresty/site/lualib/
+	mv -f qrencode.so /opt/data/openresty/site/lualib/
 
 #
 #curl -Lk https://fukuchi.org/works/qrencode/qrencode-4.0.2.tar.gz | tar xvz
