@@ -9,6 +9,7 @@ and [libpng](http://www.libpng.org/pub/png/libpng.html), so make sure these are 
 before compile it.
 #### Compile and install libqrencode into openresty
 ```sh
+yum install -y libpng
 curl -Lk https://fukuchi.org/works/qrencode/qrencode-4.0.2.tar.gz | tar xvz
 cd qrencode-4.0.2
 ./configure
